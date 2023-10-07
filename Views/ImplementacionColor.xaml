@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ColoresGraphics.Views.ImplementacionColor"
+             Title="ImplementacionColor"
+             BackgroundColor="LightGray">
+
+    <StackLayout x:Name="myStackLayout"
+                 Padding="10">
+
+        <Label Text="Color con Nombre"
+               TextColor="{OnPlatform Android=red, iOS=Blue, WinUI=Yellow}"/>
+        <Label Text="Color con RGB"
+               TextColor="#FF6633"/>
+        <Label Text="Texto con alpha plus RGB"
+               TextColor="#CCFF6633"/>
+        <Label Text="Texto De expresion pequeña RGB"
+               TextColor="#f63"/>
+    </StackLayout>
+    
+</ContentPage>
